@@ -9,14 +9,14 @@ utils.clear()                       # clear the screen
 print('Greetings!')
 color = ''
 count = 0
-while (color != 'red'):
+while (color != 'black'):
     color = input("What is my favorite color? ")
     color = color.lower().strip()
     count = count + 1               # You can also write this as count += 1
-    if (color == 'red'):
-        print('Correct!')
-    elif (color == 'pink'):
-        print('Close!')
+    if (color == 'black'):
+        print('Yes!')
+    elif (color == 'white'):
+        print('Not even close!')
     else:
-        print('Sorry, try again.')
-print('You guessed it in {0} tries!'.format(count))
+        print('I do not like the color.')
+print('You guessed it for {0} times!'.format(count))

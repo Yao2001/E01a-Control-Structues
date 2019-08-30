@@ -8,3 +8,4 @@ utils.clear()                       # clear the screen
 
 print('Greetings!')
 input("What is my favorite color? ")
+print('black')

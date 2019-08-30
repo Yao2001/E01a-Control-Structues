@@ -7,11 +7,11 @@ utils.clear()                       # clear the screen
 
 
 print('Greetings!')
-colors = ['red','orange','yellow','green','blue','violet','purple']
+colors = ['black','white','yellow','pink','grey','blue','purple']
 play_again = ''
-best_count = sys.maxsize            # the biggest number
+best_count = 10            # the biggest number
 while (play_again != 'n' and play_again != 'no'):
-    match_color = random.choice(colors)
+    match_color = 'black' #random.choice(colors)
     count = 0
     color = ''
     while (color != match_color):
@@ -19,12 +19,12 @@ while (play_again != 'n' and play_again != 'no'):
         color = color.lower().strip()
         count += 1
         if (color == match_color):
-            print('Correct!')
+            print('Yes!')
         else:
-            print('Sorry, try again. You have guessed {guesses} times.'.format(guesses=count))
-    print('\nYou guessed it in {0} tries!'.format(count))
+            print('I do not like it. You have guessed {guesses} times.'.format(guesses=count))
+    print('\nYou guessed it in {0} times!'.format(count))
     if (count < best_count):
-        print('This was your best guess so far!')
+        print('This is the closest so far!')
         best_count = count
-    play_again = input("\nWould you like to play again? ").lower().strip()
+    play_again = input("\n Do you want to do it again? ").lower().strip()
 print('Thanks for playing!')

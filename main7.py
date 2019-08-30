@@ -9,9 +9,9 @@ utils.clear()                       # clear the screen
 print('Greetings!')
 color = input("What is my favorite color? ")
 color = color.lower().strip()
-if (color == 'red'):
-    print('Correct!')
-elif (color == 'pink'):
-    print('Close!')
+if (color == 'black'):
+    print('Yes!')
+elif (color == 'white'):
+    print('Not even close!')
 else:
-    print('Sorry, try again.')
+    print('I do not like that color.')
